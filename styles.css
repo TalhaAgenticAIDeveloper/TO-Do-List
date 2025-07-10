@@ -112,3 +112,110 @@ ul li span{
 ul li span:hover{
     background: #edeef0;
 }
+
+
+
+
+
+
+
+
+
+/* For tablets and smaller desktops (width <= 1024px) */
+@media (max-width: 1024px) {
+    .todo-app {
+        padding: 30px 25px 60px;
+    }
+
+    button {
+        padding: 14px 40px;
+        font-size: 15px;
+    }
+}
+
+/* For tablets and large phones (width <= 768px) */
+@media (max-width: 768px) {
+    .todo-app {
+        margin: 80px auto 20px;
+        padding: 25px 20px 50px;
+    }
+
+    .row {
+        flex-direction: column;
+        align-items: stretch;
+        padding-left: 15px;
+    }
+
+    input {
+        width: 100%;
+        margin-bottom: 10px;
+        padding: 10px 15px;
+        font-size: 14px;
+    }
+
+    button {
+        width: 100%;
+        padding: 14px;
+        font-size: 14px;
+    }
+
+    ul li {
+        font-size: 16px;
+        padding: 10px 8px 10px 45px;
+    }
+
+    ul li::before {
+        height: 24px;
+        width: 24px;
+        top: 10px;
+    }
+
+    ul li span {
+        width: 35px;
+        height: 35px;
+        font-size: 20px;
+        line-height: 35px;
+    }
+}
+
+/* For small phones (width <= 480px) */
+@media (max-width: 480px) {
+    .todo-app {
+        padding: 20px 15px 40px;
+    }
+
+    .todo-app h2 {
+        font-size: 22px;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .todo-app h2 img {
+        margin-left: 0;
+        margin-top: 10px;
+        width: 24px;
+    }
+
+    button {
+        font-size: 13px;
+        padding: 12px;
+    }
+
+    ul li {
+        font-size: 15px;
+        padding: 10px 8px 10px 40px;
+    }
+
+    ul li::before {
+        height: 20px;
+        width: 20px;
+        top: 10px;
+    }
+
+    ul li span {
+        width: 30px;
+        height: 30px;
+        font-size: 18px;
+        line-height: 30px;
+    }
+}
